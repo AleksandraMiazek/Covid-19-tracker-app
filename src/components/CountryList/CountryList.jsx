@@ -16,7 +16,7 @@ const CountryList = ( handleCountryChange ) =>{
    }, [setFetchedCountries])
 
     const filterCountry = fetchedCountries.filter(item=> {
-    return searchCountry != "" ? item.Country.includes(searchCountry) : item;
+    return searchCountry !== "" ? item.Country.includes(searchCountry) : item;
     })
 
     return (

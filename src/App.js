@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Cards, Chart, CountryList } from './components';
 import styles from './App.module.css';
 import {fetchData} from './api';
-import { Card, CardContent, Typography, Grid } from '@material-ui/core';
+//import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 
 import coronaImg from './images/covidimg.png';
-import axios from 'axios';
-
+//import axios from 'axios';
+require('dotenv').config()
 class App extends React.Component {
   state = {
     data: {},

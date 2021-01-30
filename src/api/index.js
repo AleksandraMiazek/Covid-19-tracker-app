@@ -12,7 +12,7 @@ export const fetchData = async() => {
             Global,
             Date
         }
-
+      //  console.log(modifiedData)
         return modifiedData;
 
     } catch (error) {
@@ -29,7 +29,7 @@ export const fetchDailyData = async () => {
             deaths: dailyData.deaths.total,
             date: dailyData.reportDate
         }))
-      
+      //  console.log(modifiedDailyData)
         return modifiedDailyData
     } catch(error) {
         console.log(error)
@@ -63,7 +63,7 @@ export const fetchCountries = async() => {
             NewDeaths: country.NewDeaths,
             Date: country.Date
         }))
-        console.log(result)
+       // console.log(result)
         return result
 
     } catch (error) {
